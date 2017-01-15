@@ -45,7 +45,7 @@ gulp.task('build', function(){
     .pipe(gulp.dest('./build/css'));
   gulp.src('./src/*.html')
     .pipe(gulp.dest('./build/'));
-  gulp.src('./src/imgs/**/*.*')
+  gulp.src('./src/img/**/*.*')
     .pipe(gulp.dest('./build/imgs'));
   gulp.src('./src/js/*.js')
     .pipe(uglify())

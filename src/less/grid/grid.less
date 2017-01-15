@@ -2,9 +2,9 @@
 @import 'mixins.less';        // обращение к примесям
 
 
-// .container {
-//   .container();
-// }
+ .container {
+   .container();
+ }
 
 .row {
   .row();
@@ -29,23 +29,23 @@
   .make-offsets(@grid-columns, md);  // левые отступы для каждого селектора .col-md-offset-...
 }
 
-// // Классы модульной сетки для LG — срабатывают на ширине @screen-lg (по умолчанию: 992px)
-// .make-column-list-general-rules(lg); // список всех селекторов .col-lg-... и их обще свойства
-// @media (min-width: @screen-lg) {
-//   .make-columns(@grid-columns, lg);  // ширины для каждого селектора .col-lg-... отдельно
-//   .make-offsets(@grid-columns, lg);  // левые отступы для каждого селектора .col-lg-offset-...
-// }
+ // Классы модульной сетки для LG — срабатывают на ширине @screen-lg (по умолчанию: 992px)
+ .make-column-list-general-rules(lg); // список всех селекторов .col-lg-... и их обще свойства
+ @media (min-width: @screen-lg) {
+   .make-columns(@grid-columns, lg);  // ширины для каждого селектора .col-lg-... отдельно
+   .make-offsets(@grid-columns, lg);  // левые отступы для каждого селектора .col-lg-offset-...
+ }
 
-// // Классы модульной сетки для XL — срабатывают на ширине @screen-xl (по умолчанию: 1200px)
-// .make-column-list-general-rules(xl); // список всех селекторов .col-xl-... и их обще свойства
-// @media (min-width: @screen-xl) {
-//   .make-columns(@grid-columns, xl);  // ширины для каждого селектора .col-xl-... отдельно
-//   .make-offsets(@grid-columns, xl);  // левые отступы для каждого селектора .col-xl-offset-...
-// }
+ // Классы модульной сетки для XL — срабатывают на ширине @screen-xl (по умолчанию: 1200px)
+ .make-column-list-general-rules(xl); // список всех селекторов .col-xl-... и их обще свойства
+ @media (min-width: @screen-xl) {
+   .make-columns(@grid-columns, xl);  // ширины для каждого селектора .col-xl-... отдельно
+   .make-offsets(@grid-columns, xl);  // левые отступы для каждого селектора .col-xl-offset-...
+ }
 
-// // Классы модульной сетки для XXL — срабатывают на ширине @screen-xxl (по умолчанию: 1890px)
-// // .make-column-list-general-rules(xxl); // список всех селекторов .col-xxl-... и их обще свойства
-// // @media (min-width: @screen-xxl) {
-// //   .make-columns(@grid-columns, xxl);  // ширины для каждого селектора .col-xxl-... отдельно
-// //   .make-offsets(@grid-columns, xxl);  // левые отступы для каждого селектора .col-xxl-offset-...
-// // }
+  //Классы модульной сетки для XXL — срабатывают на ширине @screen-xxl (по умолчанию: 1890px)
+  .make-column-list-general-rules(xxl); // список всех селекторов .col-xxl-... и их обще свойства
+  @media (min-width: @screen-xxl) {
+    .make-columns(@grid-columns, xxl);  // ширины для каждого селектора .col-xxl-... отдельно
+    .make-offsets(@grid-columns, xxl);  // левые отступы для каждого селектора .col-xxl-offset-...
+  }

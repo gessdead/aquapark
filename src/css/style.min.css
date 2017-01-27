@@ -17,6 +17,12 @@ a {
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+.btn {
+  color: #fff;
+}
+.btn--blue {
+  background-color: #0ea2cb;
+}
 .container {
   display: block;
   width: 100%;
